@@ -8,7 +8,7 @@
     <Grid Background="{DynamicResource PrimaryBackground}" ColumnDefinitions="*, *" RowDefinitions="*">
         <TextBlock Grid.Column="0">Welcome to Avalonia!</TextBlock>
         <StackPanel Grid.Column="1">
-            <Button Click="greenLightButton_Click" Content="toggle Green LED" Background="AntiqueWhite"></Button>
+            <Button Click="greenLightButton_Click" Content="toggle Green LED" Background="AntiqueWhite" ></Button>
             <TextBlock x:Name="GreenLightIndicator" Foreground="#EEEEEE">Off</TextBlock>
         </StackPanel>
     </Grid>
