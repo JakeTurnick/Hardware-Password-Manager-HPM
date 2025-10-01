@@ -20,4 +20,8 @@
         </PackageReference>
         <PackageReference Include="System.IO.Ports" Version="9.0.9" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Firmware\" />
+    </ItemGroup>
 </Project>
