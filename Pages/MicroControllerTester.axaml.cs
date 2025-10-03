@@ -52,6 +52,9 @@ public partial class MicroControllerTester : UserControl
         catch (Exception error)
         {
             Console.WriteLine(error.Message);
+            
+            GreenLightIndicator.Foreground = new SolidColorBrush(Color.Parse("#EE3333"));
+            GreenLightIndicator.Text = "COM6 port not found";
         }
     }
 }
