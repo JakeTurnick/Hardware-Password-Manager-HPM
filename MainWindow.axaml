@@ -5,6 +5,7 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HPM_Companion.MainWindow"
         xmlns:pages="clr-namespace:HPM_Companion.Pages"
+        xmlns:local="clr-namespace:HPM_Companion"
         Title="HPM_Companion">
     <Window.Styles>
         <Style Selector="Button.SideButton">
@@ -13,20 +14,22 @@
             <Setter Property="Background" Value="#006699" />
             <!-- /tempalte/ .... used because: https://docs.avaloniaui.net/docs/guides/styles-and-resources/troubleshooting#selector-with-a-pseudoclass-doesnt-override-the-default  -->
             <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">
-                <Setter Property="Background" Value="#EE3399" />
+                <Setter Property="Background" Value="#0099EE" />
             </Style>
         </Style>
     </Window.Styles>
-    <Grid Background="{DynamicResource PrimaryBackground}" ColumnDefinitions="200, *" RowDefinitions="*">
-        <StackPanel Grid.Column="0" Spacing="8" HorizontalAlignment="Stretch">
-            <Button Content="Home" Classes="SideButton"></Button>
-            <Button Content="Fingerprints" Classes="SideButton"></Button>
-            <Button Content="Accounts" Classes="SideButton"></Button>
-        </StackPanel>
-        <StackPanel Grid.Column="1" HorizontalAlignment="Center" Spacing="20" VerticalAlignment="Stretch">
-            <pages:MicroControllerTester/>
-            <pages:Fingerprints />
-        </StackPanel>
+    <Grid Background="{DynamicResource PrimaryBackground}" ColumnDefinitions="200, *" RowDefinitions="*" >
+        <Border Grid.Column="0" BorderThickness="2" BorderBrush="Aqua">
+            <StackPanel Grid.Column="0" Spacing="8" HorizontalAlignment="Stretch" Margin="8">
+                <Button Content="Home" Classes="SideButton" Click="Button_Click"></Button>
+                <Button Content="Fingerprints" Classes="SideButton" Click="Button_Click" Tag="{x:Static local:PageType.Fingerprints}"></Button>
+                <Button Content="Accounts" Classes="SideButton" Click="Button_Click" Tag="{x:Static local:PageType.Accounts}"></Button>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Margin="8">
+            <StackPanel x:Name="MainContentPanel" Grid.Column="1" HorizontalAlignment="Center" Spacing="20" VerticalAlignment="Stretch">
+                <ContentControl x:Name="MainContent"></ContentControl>
+            </StackPanel>
+        </Border>
     </Grid>
-    
 </Window>
