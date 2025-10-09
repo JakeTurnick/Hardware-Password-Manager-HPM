@@ -4,5 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="HPM_Companion.Pages.Accounts">
-    <TextBlock>Accounts Page</TextBlock>
+    <UserControl.Styles>
+        <StyleInclude Source="/Styles/AccountStyles.axaml"></StyleInclude>
+    </UserControl.Styles>
+    <StackPanel>
+        <TextBlock Classes="PageTitle">Update Your Account Info</TextBlock>
+        <Button Classes="SaveAll" Name="SaveAll">Save All Changes</Button>
+        <Grid Classes="AccountCards" Name="AccountCards" RowDefinitions="Auto Auto Auto Auto Auto"
+              ColumnDefinitions="Auto Auto Auto">
+        </Grid>
+    </StackPanel>
 </UserControl>
