@@ -24,4 +24,9 @@
     <ItemGroup>
       <Folder Include="Firmware\" />
     </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\unifont.ttf" />
+      <AvaloniaResource Include="Assets\unifont.ttf" />
+    </ItemGroup>
 </Project>

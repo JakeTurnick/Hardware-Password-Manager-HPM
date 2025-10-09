@@ -9,6 +9,8 @@
         <StyleInclude Source="Styles/AppDefaultStyles.axaml"></StyleInclude>
     </Application.Styles>
     <Application.Resources>
+        <FontFamily x:Key="Unifont">/Assets/unifont.ttf#Unifont</FontFamily>
         <SolidColorBrush x:Key="PrimaryBackground">#14172d</SolidColorBrush>
+        <SolidColorBrush x:Key="SecondaryBackground">#006699</SolidColorBrush>
     </Application.Resources>
 </Application>

@@ -5,6 +5,14 @@
             <!-- Add Controls for Previewer Here -->
         </Border>
     </Design.PreviewWith>
-
+    <Style Selector="Window">
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="FontFamily" Value="{DynamicResource Unifont}"></Setter> 
+    </Style>
+    <Style Selector="TextBlock.PageTitle">
+        <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontSize" Value="36"></Setter>
+    </Style>
     <!-- Add Styles Here -->
 </Styles>
