@@ -6,8 +6,10 @@
         <entry key="App.axaml" value="HPM Companion.csproj" />
         <entry key="MainWindow.axaml" value="HPM Companion.csproj" />
         <entry key="Pages/Accounts.axaml" value="HPM Companion.csproj" />
+        <entry key="Pages/Components/AccountCard.axaml" value="HPM Companion.csproj" />
         <entry key="Pages/Fingerprints.axaml" value="HPM Companion.csproj" />
         <entry key="Pages/MicroControllerTester.axaml" value="HPM Companion.csproj" />
+        <entry key="Styles/AccountStyles.axaml" value="HPM Companion.csproj" />
         <entry key="Styles/AppDefaultStyles.axaml" value="HPM Companion.csproj" />
       </map>
     </option>
