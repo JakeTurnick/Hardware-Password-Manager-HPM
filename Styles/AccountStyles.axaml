@@ -1,0 +1,33 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <Border Padding="20">
+            <!-- Add Controls for Previewer Here -->
+        </Border>
+    </Design.PreviewWith>
+
+    <!-- Add Styles Here -->
+    <Style Selector="Button.SaveAll">
+        <Setter Property="Background" Value="#70DBC7"></Setter>
+        <Setter Property="Foreground" Value="Black"></Setter>
+        <Setter Property="Margin" Value="0  20"></Setter> 
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+    </Style>
+    <Style Selector="Grid.CardBody">
+        <Setter Property="RowSpacing" Value="5"></Setter>
+    </Style>
+    <Style Selector="Border.AccountCard">
+        <Setter Property="Padding" Value="10"></Setter> 
+        <Setter Property="Background" Value="{DynamicResource SecondaryBackground}"></Setter>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter> 
+        <Setter Property="Margin" Value="0 0 20 20"></Setter>
+    </Style>
+    <Style Selector="TextBlock.AccountName">
+        <Setter Property="FontSize" Value="24"></Setter> 
+        <Setter Property="Margin" Value="0 0 0 10"></Setter> 
+        <Setter Property="FontWeight" Value="SemiBold"></Setter>
+    </Style>
+    <Style Selector="Border.AccountCard Button">
+        <Setter Property="Background" Value="{DynamicResource PrimaryBackground}"></Setter>
+    </Style>
+</Styles>
